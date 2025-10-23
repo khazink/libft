@@ -6,11 +6,11 @@
 /*   By: kkaman <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 15:49:08 by kkaman            #+#    #+#             */
-/*   Updated: 2025/10/15 16:51:21 by kkaman           ###   ########.fr       */
+/*   Updated: 2025/10/23 10:42:01 by kkaman           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include "libft.h"
 
 size_t	cal_len(const char *input)
 {

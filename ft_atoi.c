@@ -6,11 +6,11 @@
 /*   By: kkaman <kkaman@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/17 09:45:46 by kkaman            #+#    #+#             */
-/*   Updated: 2025/10/17 10:36:10 by kkaman           ###   ########.fr       */
+/*   Updated: 2025/10/23 10:55:07 by kkaman           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include "libft.h"
 
 int	ft_atoi(const char *str)
 {

@@ -6,11 +6,11 @@
 /*   By: kkaman <kkaman@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/17 10:38:46 by kkaman            #+#    #+#             */
-/*   Updated: 2025/10/17 16:25:36 by kkaman           ###   ########.fr       */
+/*   Updated: 2025/10/23 10:56:42 by kkaman           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
 char	*strdup(const char *s)
 {
