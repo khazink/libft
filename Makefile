@@ -6,7 +6,7 @@
 #    By: kkaman <kkaman@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/10/23 15:09:30 by kkaman            #+#    #+#              #
-#    Updated: 2025/10/23 16:18:21 by kkaman           ###   ########.fr        #
+#    Updated: 2025/10/25 12:51:04 by kkaman           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,22 +25,31 @@ SRC	= ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c \
 	ft_strmapi.c ft_striteri.c ft_putchar_fd.c ft_putstr_fd.c \
 	ft_putendl_fd.c ft_putnbr_fd.c
 
+BONUS_SRC = ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c \
+	    ft_lstadd_back.c ft_lstdelone.c ft_lstclear.c ft_lstiter.c \
+	    ft_lstmap.c
+
 OBJ	= $(SRC:.c=.o)
+
+BONUS_OBJ = $(BONUS_SRC:.c=.o)
 
 all: $(NAME)
 
 $(NAME): $(OBJ)
 	$(AR) $(NAME) $(OBJ)
 
-.o:.c
+bonus: $(OBJ) $(BONUS_OBJ)
+	$(AR) $(NAME) $(BONUS_OBJ)
+
+%.o: %.c
 	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
-	$(RM) $(OBJ)
+	$(RM) $(OBJ) $(BONUS_OBJ)
 
 fclean: clean
 	$(RM) $(NAME)
 
 re: fclean all
 
-.PHONY: all clean fclean re
+.PHONY: all bonus clean fclean re
